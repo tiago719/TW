@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="../../../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../../../scripts/script.js"></script>
+    
+</head>
+<body>
+    <div id="logo">
+        <img src="../../../img/sony_logo.png" />
+    </div>
+    <div id="header">
+		
+        <script>
+            $("#header").load("../../../header.html");
+            $.getScript("../../../scripts/script.js", function () {
+                func();
+            });
+        </script>
+    </div>
+    <div id="conteudo">
+        <div id="texto">
+            <a href="index.html"><h1>Câmaras α com Lentes Amovíveis</h1></a>
+            <video width="600" autoplay controls style="display: block;margin: 20px auto;">
+                <source src="../Camaras-a-com-lentes-amoviveis/img/sony_video.mp4" type="video/mp4">
+                <source src="../Camaras-a-com-lentes-amoviveis/img/sony_video.webm" type="video/webm">
+            </video>
+            <table>
+                <tr>
+                    <td><img class="ultima" src="img/fotografia_casual.png" /><h5>Fotografia Casual</h5><div class="descricao">Tire fotografias com a qualidade de publicação e aumente a sua criatividade com a facilidade de "apontar e disparar".</div></td>
+                    <td><img class="ultima" src="img/amadores_avancados.png" /><h5>Amadores Avançados</h5><div class="descricao">Excelente qualidade de imagem com sensores de imagem de tamanho APS-C e tecnologia de ponta.</div></td>
+                    <td><img class="ultima" src="img/ideal_para_profissionais.png" /><h5>Ideal para Profissionais</h5><div class="descricao">Modelos topo de gama com sensores de imagem full-frame de 35 mm e os mais recentes avanços técnicos da Sony.</div></td>
+                    <td><img class="ultima" src="img/lentes_alfa.png" /><h5>Lentes α</h5><div class="descricao">Aumente a sua criatividade e visão com uma gama de lentes para todas as situações e ocasiões.</div></td>
+                </tr>
+
+            </table>
+
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>

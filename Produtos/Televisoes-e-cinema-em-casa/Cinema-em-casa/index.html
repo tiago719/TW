@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="../../../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../../../scripts/script.js"></script>
+    
+</head>
+<body>
+    <div id="logo">
+        <img src="../../../img/sony_logo.png" />
+    </div>
+    <div id="header">
+		
+        <script>
+            $("#header").load("../../../header.html");
+            $.getScript("../../../scripts/script.js", function () {
+                func();
+            });
+        </script>
+    </div>
+    <div id="conteudo">
+        <div id="texto">
+            <a href="index.html"><h1>Cinema em Casa</h1></a>
+
+            <table>
+                <tr>
+                    <td><img class="ultima" src="img\1.png" /><h5>Barras de Som</h5><div class="descricao">Basta ligar e configurar para um prático som surround de alta qualidade</div></td>
+                    <td><img class="ultima" src="img\2.png" /><h5>Sistemas All-In-One</h5><div class="descricao">As configurações completas de colunas e subwoofer proporcionam a potência e o impacto de uma experiência de cinema.</div></td>
+                    <td><img class="ultima" src="img\3.png" /><h5>Recetores A/V</h5><div class="descricao">Poderosos e flexíveis componentes de áudio e vídeo, que permitem a ligação e a transmissão a partir de várias fontes.</div></td>
+                    <td><img class="ultima" src="img\4.png" /><h5>Colunas de Som Surround</h5><div class="descricao">A experiência de áudio da Sony proporciona um excelente entretenimento em casa nesta gama de colunas.</div></td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

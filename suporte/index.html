@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../scripts/script.js"></script>
+
+
+</head>
+<body>
+    <div id="logo">
+        <img src="../img/sony_logo.png" />
+    </div>
+    <div id="header">
+
+        <script>
+            $("#header").load("../header.html");
+            $.getScript("../scripts/script.js", function () {
+                func();
+            });
+        </script>
+    </div>
+    <div id="conteudo">
+        <div id="texto">
+
+
+
+            <a href=""><h1>Suporte</h1></a>
+
+            <div id="apoio">
+                <div>
+
+                    <div class="subsuporte">
+                        <h3>Suporte por Live Chat</h3>
+
+                        <p>
+                            O Live Chat está disponível de
+                            Segunda a Sexta das 09H00 às 20H00
+                        </p>
+
+                        <div>
+
+                            Este Serviço Live Chat destina-se a clientes
+                            que se encontrem no Espaço Económico
+                            Europeu e na Suíça.
+                        </div>
+                        <div>
+                            Caso não se encontre nesta área, por favor
+                            entre em contacto com o Suporte por Live
+                            Chat local da Sony.
+                        </div>
+                    </div>
+
+                    <div class="subsuporte">
+                        <h3>Suporte por Telefone</h3>
+                        <p>
+                        </p><div>Linha Azul – Linha de apoio a clientes Sony</div>
+                        <div>808 207 267</div>
+                        <div>
+                            FAX: 808 200 129
+                        </div>
+                        <p></p>
+
+                        Horário de atendimento: Segunda a Sexta das 9H00 às 20H00.
+                    </div>
+
+                    <div class="subsuporte" style="margin-right: 0;">
+                        <h3>Suporte por Email</h3>
+                        <p>
+                            <div style="display:inline-block; margin-right:2px;">
+                                <a href="#form_suporte_produto" onclick="mostra('suporte_produto');" id="suporte_produto">
+                                    <img src="email.svg" width="25" />
+                                </a>
+                            </div>
+                            <div style="display:inline-block">
+                                Para suporte ao seu produto<br />
+                                <a href="#form_suporte_produto" onclick="mostra('suporte_produto');" id="perguntas">Correio electrónico</a>
+                            </div>
+</p>
+                        <p>
+                            <div style="display:inline-block">
+                                <a href="#form_perguntas" onclick="mostra('perguntas');" id="perguntas"><img src="email.svg" width="25"></a>
+                            </div>
+                            <div style="display:inline-block;width: 185px;">
+                                Para perguntas gerais ou sugestões<br />
+                                <a href="#form_perguntas" onclick="mostra('perguntas');" id="perguntas">Correio electrónico</a>
+                            </div>
+                                
+</p>
+</div>
+
+                </div>
+            </div>
+
+            <form class="pure-form" id="form_suporte_produto" style="display: none;">
+                <h2>Suporte ao Seu Produto</h2>
+                <table style="text-align:left;" border="0">
+                    <tbody>
+                        <tr>
+                            <td style="text-align:left"><label for="nome">Nome Completo:</label></td>
+                            <td style="text-align:left"><input class="pure-form" type="text" name="Nome" id="nome" size="50" required="required" autofocus="autofocus" autocomplete="on"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left">Sexo</td>
+                            <td style="text-align:left">
+                                <input type="radio" required name="sexo" id="masc"> <label for="masc">Masculino</label>
+                                <input type="radio" name="sexo" id="fem" autocomplete="on"> <label for="fem">Feminino</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><label for="cc">Cartão de Identificação</label> </td>
+                            <td style="text-align:left"><input type="text" name="cc" id="cc" pattern="[0-9]{8}" required="required" placeholder="Nº Identificação Civil" autocomplete="on"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><label for="idade">Idade</label></td>
+                            <td style="text-align:left"><input type="number" id="idade" name="idade" required="required" min="1" max="125" autocomplete="on"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><label for="morada">Morada</label></td>
+                            <td style="text-align:left"><input type="text" id="morada" size="50" required="required" autocomplete="on"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><label for="localidade">Localidade</label></td>
+                            <td style="text-align:left"><input type="text" id="localidade" required="required" autocomplete="on"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><label for="cod_postal">Código Postal</label></td>
+                            <td style="text-align:left">
+                                <input type="text" id="cod_postal" size="3" required="required" pattern="[0-9]{4}">
+                                <input required="required" type="text" size="2" pattern="[0-9]{3}" autocomplete="on"> <input type="text" size="40" required="required" autocomplete="on">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left">Motivo do Contacto</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><input required type="radio" id="apoio_comerial" name="motivo"> <label for="apoio_comerial">Apoio Comercial</label></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><input type="radio" id="apoio_tecnico" name="motivo"> <label for="apoio_tecnico">Apoio Técnico</label></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><input type="radio" id="outras" name="motivo"> <label for="outras">Outras Questões</label> </td>
+                            <td style="text-align:left"><textarea id="outra_questa_ta" style="display:none;" placeholder="Quais?"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><input type="reset" name="btreset" value="Limpar"> <input type="submit" name="btsubmit" value="Enviar"></td>
+                            <td style="text-align:left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+               
+                
+
+
+
+            </form>
+
+            
+
+            <form class="pure-form" id="form_perguntas" style="display:none;">
+                <h2>Perguntas Gerais ou Sugestões</h2>
+                <table style="text-align:left; width:600px;">
+                    <tbody>
+                        <tr>
+                            <td style="text-align:left";>
+                                <label for="first">Primeiro Nome</label>
+
+                                <input type="text" autofocus required autocomplete="on" name="first" id="first" style="width:212px">
+
+                                <label for="last">Apelido</label>
+                                <input type="text" required="" autocomplete="on" name="last" style="width:212px" id="last">
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td style="text-align:left">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" autocomplete="on" required style="width:555px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><input type="text" required placeholder="Assunto" style="width:600px" ></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><textarea placeholder="Qual a sua pergunta/sugestão?" required style="width:600px" rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            
+                            <td style="text-align:left"><input type="reset" name="btreset" value="Limpar"> <input type="submit" name="btsubmit" value="Enviar"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+            </form>
+            
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>

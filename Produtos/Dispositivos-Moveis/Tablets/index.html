@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="../../../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../../../scripts/script.js"></script>
+    
+</head>
+<body>
+    <div id="logo">
+        <img src="../../../img/sony_logo.png" />
+    </div>
+    <div id="header">
+		
+        <script>
+            $("#header").load("../../../header.html");
+            $.getScript("../../../scripts/script.js", function () {
+                func();
+            });
+        </script>
+    </div>
+    <div id="conteudo">
+        <div id="texto">
+            <a href="index.html"><h1>Tablets</h1></a>
+
+            <table>
+                <tr>
+                    <td><img class="ultima" src="img\1.png" /><h5>Xperia™ Z4 Tablet</h5><div class="descricao">Concebido para entreter</div></td>
+                    <td><img class="ultima" src="img\2.png" /><h5>Xperia™ Z3 Tablet Compact</h5><div class="descricao">Maior do que o seu tamanho</div></td>
+                    <td><img class="ultima" src="img\3.png" /><h5>Xperia™ Z2 Tablet</h5><div class="descricao">Ultra-fino. Ultra-leve</div></td>
+                </tr>
+                <tr>
+                    <td><img class="ultima" src="img\4.png" /><h5>Xperia™ Tablet Z</h5><div class="descricao">Experimente o melhor da Sony num tablet</div></td>
+                    <td><img class="ultima" src="img\5.png" /><h5>Xperia™ Tablet S</h5><div class="descricao">Um lugar para a sua imaginação brincar</div></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

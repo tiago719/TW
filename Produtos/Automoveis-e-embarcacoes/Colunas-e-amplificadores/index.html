@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="../../../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../../../scripts/script.js"></script>
+    
+</head>
+<body>
+    <div id="logo">
+        <img src="../../../img/sony_logo.png" />
+    </div>
+    <div id="header">
+		
+        <script>
+            $("#header").load("../../../header.html");
+            $.getScript("../../../scripts/script.js", function () {
+                func();
+            });
+        </script>
+    </div>
+    <div id="conteudo">
+        <div id="texto">
+            <a href="index.html"><h1>Colunas e Amplificadores</h1></a>
+
+            <table>
+                <tr>
+                    <td><img class="ultima" src="img\1.png" /><h5>Colunas</h5><div class="descricao">A atualização do seu sistema de áudio do seu automóvel começa aqui, com uma variedade de colunas avançadas.  </div></td>
+                    <td><img class="ultima" src="img\2.png" /><h5>Subwoofers</h5><div class="descricao">Reproduzindo graves que consegue sentir, são essenciais para o melhor desempenho áudio móvel.</div></td>
+                    <td><img class="ultima" src="img\3.png" /><h5>Amplificadores</h5><div class="descricao">Para um som em grande, equipe o seu automóvel com os nossos amplificadores de elevada potência.</div></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

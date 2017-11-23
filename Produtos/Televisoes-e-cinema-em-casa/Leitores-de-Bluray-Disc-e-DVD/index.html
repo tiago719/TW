@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="../../../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../../../scripts/script.js"></script>
+    
+</head>
+<body>
+    <div id="logo">
+        <img src="../../../img/sony_logo.png" />
+    </div>
+    <div id="header">
+		
+        <script>
+            $("#header").load("../../../header.html");
+            $.getScript("../../../scripts/script.js", function () {
+                func();
+            });
+        </script>
+    </div>
+    <div id="conteudo">
+        <div id="texto">
+            <a href="index.html"><h1>Leitores de Blu-Ray Disc e DVD</h1></a>
+
+            <table>
+                <tr>
+                    <td><img class="ultima" src="img\1.png" /><h5>Leitores Blu-Ray Disc</h5><div class="descricao">Os leitores de Blu-ray da Sony oferecem uma vasta gama de suporte, conetividade e opções de transmissão de multimédia.</div></td>
+                    <td><img class="ultima" src="img\2.png" /><h5>Leitor de DVD compacto</h5><div class="descricao">Opções acessíveis da Sony para desfrutar de uma agradável reprodução da sua coleção de DVD.</div></td>
+                    
+                </tr>
+
+            </table>
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>

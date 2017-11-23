@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="../../../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../../../scripts/script.js"></script>
+    
+</head>
+<body>
+    <div id="logo">
+        <img src="../../../img/sony_logo.png" />
+    </div>
+    <div id="header">
+	    
+        <script>
+            $("#header").load("../../../header.html");
+            $.getScript("../../../scripts/script.js", function () {
+                func();
+            });
+        </script>
+    </div>
+    <div id="conteudo">
+        <div id="texto">
+            <a href="index.html"><h1>Auscultadores</h1></a>
+
+            <table>
+                <tr>
+                    <td><img class="ultima" src="img\1.png" /><h5>Auscultadores Supra-Aurais</h5><div class="descricao">Casual ou profissional, a Sony leva a qualidade de som e o conforto muito a sério no que respeita aos auscultadores.</div></td>
+                    <td><img class="ultima" src="img\2.png" /><h5>Auscultadores Intra-Aurais</h5><div class="descricao">Auriculares simples ou a melhor tecnologia, a Sony tem de tudo para todos os utilizadores.</div></td>
+                    <td><img class="ultima" src="img\3.png" /><h5>Amplificadores para Auscultadores</h5><div class="descricao">Desfrute de áudio como se estivesse num estúdio, ligando este amplificador para auscultadores a um PC ou dispositivo móvel.</div></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

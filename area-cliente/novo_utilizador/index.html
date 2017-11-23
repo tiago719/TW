@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="../../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../../scripts/script.js"></script>
+
+</head>
+<body>
+    <div id="logo">
+        <img src="../../img/sony_logo.png" />
+    </div>
+    <div id="header">
+
+        <script>
+            $("#header").load("../../header.html");
+            $.getScript("../../scripts/script.js", function () {
+                func();
+            });
+        </script>
+    </div>
+    <div id="conteudo">
+        <div id="texto">
+            <a href="index.html"><h1>Criar nova conta de utilizador</h1></a>
+
+            <form class="pure-form">
+                <table style="text-align:left" >
+                    <tr>
+                        <td style="text-align:left" ><label for="first">Primeiro Nome</label></td>
+                        <td style="text-align:left" >
+                            <input type="text" autofocus required autocomplete="on" name="first" id="first" />
+                        </td>
+                        </tr>
+                    <tr>
+                        <td style="text-align:left"><label for="last">Apelido</label></td>
+                        <td style="text-align:left"><input type="text" required autocomplete="on" name="last" id="last" /></td>
+                        
+                        
+                    </tr>
+                    <tr><td style="text-align:left" ><label for="user">Nome de Utilizador</label></td><td style="text-align:left"><input required type="text" id="user" /></td>
+                    <tr><td style="text-align:left" ><label for="pass">Password</label></td><td style="text-align:left"><input  required type="password" id="pass" /></td></tr>
+                    
+                    <tr>
+                        <td style="text-align:left" ><label for="email">E-mail</label></td>
+                        <td style="text-align:left" ><input type="email" id="email" autocomplete="on" required /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left" ><label for="BirthDay">Data de Nascimento</label></td>
+
+                        <td style="text-align:left" >
+                            <input type="number" maxlength="2" name="BirthDay" id="BirthDay" required placeholder="Dia" style="width:50px;" min="1" max="31">
+                            <select required>
+                                <option disabled selected>Mês</option>
+                                <option value="Janeiro">Janeiro</option>
+                                <option value="Fevereiro">Fevereiro</option>
+                                <option value="Março">Março</option>
+                                <option value="Abril">Abril</option>
+                                <option value="Maio">Maio</option>
+                                <option value="Junho">Junho</option>
+                                <option value="Julho">Julho</option>
+                                <option value="Agosto">Agosto</option>
+                                <option value="Setembro">Setembro</option>
+                                <option value="Outubto">Outubro</option>
+                                <option value="Novembro">Novembro</option>
+                                <option value="Dezembro">Dezembro</option>
+                            </select>
+                            <input type="text" pattern="[0-9]{4}" placeholder="Ano" required size="3" autocomplete="on" />
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="text-align:left" >Sexo</td>
+                        <td style="text-align:left" >
+                            <input type="radio" name="sexo" id="masc" required /> <label for="masc">Masculino</label>
+                            <input type="radio" name="sexo" id="fem" autocomplete="on" required /> <label for="fem">Feminino</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left" ><label for="contact">Contacto</label></td>
+                        <td style="text-align:left" ><input type="text" id="contact" pattern="[9]{1}[0-9]{8}" required autocomplete="on" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left" ><label for="morada">Morada</label></td>
+                        <td style="text-align:left" ><input type="text" id="morada" size="50" autocomplete="on" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left" ><label for="localidade">Localidade</label></td>
+                        <td style="text-align:left" ><input type="text" id="localidade" autocomplete="on" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left" ><label for="cod_postal">Código Postal</label></td>
+                        <td>
+                            <input type="text" id="cod_postal" size="3" pattern="[0-9]{4}" autocomplete="on" />
+                            <input type="text" size="2" pattern="[0-9]{3}" autocomplete="on" /> <input type="text" size="40" autocomplete="on" />
+                        </td>
+                    </tr>
+
+                </table>
+
+                <input type="reset" name="btreset" value="Limpar" /> <input type="submit" name="btsubmit" value="Registar" />
+
+            </form>
+
+            </div>
+        </div>
+
+</body>
+</html>
+

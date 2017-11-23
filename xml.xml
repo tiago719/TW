@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<users>
+  <utilizador>
+    <user>user1</user>
+    <pass>asd</pass>
+    <prim_nome>Eduardo</prim_nome>
+    <ult_nome>Fernandes</ult_nome>
+    <mail>edu.cadete.fernandes@gmail.com</mail>
+    <data_nas>11/09/1997</data_nas>
+    <contato>915122154</contato>
+    <morada>rua exemplo</morada>
+    <localidade>santa maria da feira</localidade>
+    <cod_postal>4520</cod_postal>
+  </utilizador>
+  <utilizador>
+    <user>teste2</user>
+    <pass>asd</pass>
+    <prim_nome>Tiago</prim_nome>
+    <ult_nome>Coutinho</ult_nome>
+    <mail>tiagoaacoutinho@gmail.com</mail>
+    <data_nas>04/06/1997</data_nas>
+    <contato>915154324</contato>
+    <morada>rua exemplo 2</morada>
+    <localidade>Aveiro</localidade>
+    <cod_postal>3800</cod_postal>
+  </utilizador>
+</users>

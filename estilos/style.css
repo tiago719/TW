@@ -1,0 +1,311 @@
+body {
+    background:#3e3e3e url(../img/bg.png) 0 0 repeat-x;
+    margin: 8px;
+    font-family: 'SST W01 Roman', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#logo{
+    margin: 0 auto;
+    max-width: 52%;
+}
+#logo img {
+    max-height: 70px;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    padding: 20px 0 10px 0;
+    border-bottom: 1px solid #242424;
+}
+
+#header{
+     max-width: 60%; 
+     margin: 0 auto;
+     
+
+}
+
+#menu{
+
+/* margin: 0; */
+
+padding: 0 10px;
+
+padding-bottom: 50px;
+
+margin: 0 auto;
+
+position: relative;
+font-size:18px;
+}
+
+
+#menu .titulo_menu{
+    display:none;
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu li{
+    margin-right: 20px;
+    padding: 0 10px;
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+#menu li:hover > ul {
+    visibility: visible;
+}
+
+#menu span:hover{
+    color: darkorange;
+}
+
+#texto h1:hover{
+    color: darkorange;
+}
+
+#menu ul ul ul {
+    left:200px;
+    top: 0px;
+}
+.submenu{
+    position: absolute;
+    visibility: hidden;
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+.submenu li{
+    border: 1px solid #333;
+
+    width: 190px;
+    height: 40px;
+    border: 1px;
+    margin: 0!important;
+    padding-right: 0!important;
+}
+
+#menu .submenu{
+    background-color:#363636;
+    z-index:99;
+    padding-left: 0px;
+    border-radius: 0 0 10px 10px;
+     text-align:left;
+    display: block;
+    height: auto;
+    margin: 0px;
+    padding: 3px 5px;
+    font-size:13px;
+}
+
+
+#conteudo{
+    left: 0;
+    position:absolute;
+    background-color: white;
+    width:100%;
+    height:auto;
+    min-height:100%;
+}
+#texto{
+    font-size: 15px;
+    line-height: 22.0001px;
+    position:relative;
+    margin: 0 auto;
+    max-width: 50%;
+    padding: 10px 0;
+    text-align:justify;
+}
+
+.produtos{
+    width:164px;
+    height:90px;
+}
+
+td{
+    text-align: center;
+    margin-bottom: 100px;
+}
+form td{
+    text-align: left;
+}
+
+a{
+    color:black;
+    text-decoration:none;
+}
+#apoio a{
+    color:blue;
+    
+}
+#apoio a:hover{
+    color:black;
+    
+}
+
+.descricao{
+    text-align:left;
+
+}
+
+h5{
+    text-align:left;
+}
+
+.ultima{
+    width:228px;
+    height:120px;
+}
+
+.cycle-slideshow{
+    width:300px;
+    height: 200px;
+    /*background-color: black;*/
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+.cycle-slideshow img{
+    position: relative;
+    left:0px;
+    margin-bottom: 100px;
+}
+
+.prev{
+    display: none; 
+    position: absolute;
+    top: 40%;
+    left:0;
+    z-index: 900000;
+}
+
+.next{
+    display: none; 
+    position: absolute;
+    top: 40%;
+    right:0;
+    z-index: 900000;
+}
+
+#logado{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 230px;
+    height: 50px;
+    display: none;
+}
+#logado #loagado-style {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    opacity: 0.3;
+    border-radius: 5px;
+    display: block;
+}
+
+#logado span{
+    color: white;
+    position: absolute;
+    z-index: 10;
+    padding-left: 5px;
+}
+
+#apoio{
+    display:block;
+}
+
+
+.subsuporte{
+    margin-right: 12px;
+    display: inline-table;
+    width: 214px;
+    margin-bottom: 50px;
+}
+
+form,input,textarea, select{
+    padding: .5em .6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 950px) {
+    
+    #menu .submenu{
+        background-color:transparent;
+        position: initial;
+        visibility: visible;
+    }
+    #menu .titulo_menu{
+        display:block;
+        background-color: #333333;
+        color: white;
+        height: 21px;
+        padding: 9px;
+        cursor:pointer;
+        border-bottom-style:groove;
+        border-radius: 2px;
+    }
+
+    #menu li {
+        float: none;
+        height: auto;
+    }
+    .menu{
+         display: none;
+         background-color: #545454;
+         margin-top: 0;
+         padding-top: 5px;
+         padding-bottom: 5px;
+         border-bottom-left-radius: 25px;
+         border-bottom-right-radius: 25px;
+         padding-left: 20px;
+    }
+
+    #menu{
+        width: 98%;
+        margin:0;
+    }
+
+    #header{
+         max-width:100%; 
+         margin: 0 ; 
+    }
+
+    #texto{
+        margin: 0px auto;
+        margin-left: 10px;
+        max-width: 100%;
+        margin-right: 10px;
+    }
+
+    table{
+        width: 100%;
+    }
+    td{
+        display: block;
+        margin-bottom: 40px;
+    }
+    #logado{
+    position: static;
+}
+    
+}
+@media screen and (max-width: 1241px) {
+
+    #smartphone table{
+        width: 100%;
+    }
+    #smartphone td{
+        display: block;
+        margin-bottom: 40px;
+    }
+}

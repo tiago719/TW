@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../scripts/script.js"></script>
+    
+</head>
+<body>
+    <div id="logo">
+        <img src="../img/sony_logo.png" />
+        <div id="logado"><span class="nome">Bem-vindo </span><div id="loagado-style"></div></div>
+
+    </div>
+    <div id="header">
+		
+        <script>
+            $("#header").load("../header.html");
+            $.getScript("../scripts/script.js", function () {
+                func();
+            });
+        </script>
+        </div>
+    <div id="conteudo">
+        <div id="texto">
+            <a href="index.html"><h1>Área Cliente</h1></a>
+            <form id="login" onsubmit="loadDoc();return false;" class="pure-form">
+                <table>
+                    <tr>
+                        <td><input type="text" name="user" placeholder="Nome de Utilizador"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" name="pass" placeholder="Password" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" style="margin-right: 10px;" /><a href="novo_utilizador/">Novo Utilizador</a></td>
+                    </tr>
+                    <tr>
+                        <td><br/>*User: user1  pass:asd  ou  User: user2   pass:asd <br /> 
+                            Os dados estão no ficheiro xml.xml, o registo não guarda no ficheiro pois não é possivel escrever no ficheiro porque é uma operaçao de servidor apenas permite ler.
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+   
+
+
+       
+</body>
+</html>

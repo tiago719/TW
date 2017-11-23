@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../scripts/script.js"></script>
+    
+</head>
+<body>
+    <div id="logo">
+        <img src="../img/sony_logo.png" />
+    </div>
+    <div id="header">
+		
+        <script>
+            $("#header").load("../header.html");
+            $.getScript("../scripts/script.js", function () {
+                func();
+            });
+        </script>
+        </div>
+    <div id="conteudo">
+        <div id="texto">
+            <a href="index.html"><h1>Produtos</h1></a>
+
+            <table>
+
+                <tr>
+                    <td><a href="Camaras/"><img class="produtos" src="img\camaras.png" /><h4>Câmaras</h4></a></td> 
+                    <td><a href="Dispositivos-Moveis/"><img class="produtos" src="img\dispositivos_moveis.png" /><h4>Dispositivos Móveis</h4></a></td> 
+                    <td><a href="Televisoes-e-cinema-em-casa/"><img class="produtos" src="img\televisoes_e_cinemas_em_casa.png" /><h4>Televisões e Cinema em Casa</h4></a></td> 
+                </tr>
+                    
+                <tr>
+
+                    <td><a href="Audio/"><img class="produtos" src="img\audio.png" /><h4>Áudio</h4></a></td> 
+                    <td><a href="Automoveis-e-embarcacoes/"><img class="produtos" src="img\automoveis_e_embarcacoes.png" /><h4>Automóveis e Embarcações</h4></a></td> 
+
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+   
+
+
+       
+</body>
+</html>

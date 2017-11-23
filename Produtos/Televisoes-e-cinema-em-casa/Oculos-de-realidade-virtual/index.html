@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="../../../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../../../scripts/script.js"></script>
+    
+</head>
+<body>
+    <div id="logo">
+        <img src="../../../img/sony_logo.png" />
+    </div>
+    <div id="header">
+		
+        <script>
+            $("#header").load("../../../header.html");
+            $.getScript("../../../scripts/script.js", function () {
+                func();
+            });
+        </script>
+    </div>
+    <div id="conteudo">
+        <div id="texto">
+            <a href="index.html"><h1>Óculos de Realidade Virtual</h1></a>
+
+            <table>
+
+                <tr>
+                    <td><img class="ultima" src="img\1.png" /><h5>Óculos de realidade virtual HMZ-T2</h5><div class="descricao">Envolvente qualidade de vídeo e peso reduzido, com um ajuste e desempenho em jogos melhorado.</div></td>
+                    <td><img class="ultima" src="img\2.png" /><h5>Óculos de realidade virtual HMZ-T3W</h5><div class="descricao">Fantástica qualidade sem fios para utilizar em casa e em viagem, mais leve, mais confortável e compatível com jogos.</div></td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

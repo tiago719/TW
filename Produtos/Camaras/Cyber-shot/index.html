@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="../../../estilos/style.css" type="text/css" rel="stylesheet" />
+    <script src="../../../scripts/script.js"></script>
+    
+</head>
+<body>
+    <div id="logo">
+        <img src="../../../img/sony_logo.png" />
+    </div>
+    <div id="header">
+		
+        <script>
+            $("#header").load("../../../header.html");
+            $.getScript("../../../scripts/script.js", function () {
+                func();
+            });
+        </script>
+    </div>
+    <div id="conteudo">
+        <div id="texto">
+            <a href="index.html"><h1>Cyber-Shot</h1></a>
+            <table>
+                <tr>
+                    <td><img class="ultima" src="img\1.png"/><h5>Fotografia Casul</h5><div class="descricao">Câmaras de "apontar e disparar", pequenas e elegantes que oferecem fantásticos instantâneos e um excelente valor.</div></td>
+                    <td><img class="ultima" src="img\2.png" /><h5>Grande Zoom</h5><div class="descricao">Câmaras compactas com zoom ótico até 50x que o aproxima daquilo que é realmente importante.</div></td>
+                    <td><img class="ultima" src="img\3.png" /><h5>Ideal para Profissionais</h5><div class="descricao">Câmaras potentes que cabem no bolso, com imagens de qualidade profissional.</div></td>
+                    <td><img class="ultima" src="img\4.png" /><h5>Lens-Style</h5><div class="descricao">Tire fotografias fantásticas com dispositivos móveis com estas câmaras Lens-Style acopláveis e repletas de funcionalidades.</div></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
